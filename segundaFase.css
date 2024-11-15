@@ -1,0 +1,348 @@
+
+.segundaFase{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    background-image: url(../pictures/depositphotos_272424264-stock-photo-hacker-working-laptop-dark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.segundaFase.entrar{
+    display: block;
+}
+
+.segundaFase .created{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+
+.segundaFase .created p{
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.created .indi{
+    color: white;
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    animation: indibilingue 2s alternate infinite;
+}
+
+
+@keyframes indibilingue{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.10);
+    }
+}
+
+.segundaFase .boxFase{
+    padding: 15%;
+}
+
+.segundaFase .boxFase h1{
+    color: blue;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px white;
+    position: absolute;
+    left: 34.5%;
+    top: 28%;
+    animation: letras 2s alternate infinite;
+}
+
+.segundaFase .boxFase .botoes{
+    position: absolute;
+    left: 35.3%;
+    top: 45%;
+}
+
+.segundaFase .boxFase button{
+    width: 400px;
+    padding: 10px;
+    font-size: 25px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+}
+
+.segundaFase .boxFase button:hover{
+    transition: .5s ease;
+    background-color: black;
+    color: red;
+}
+
+.segundaFase .design{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    padding: 20px 2px;
+    display: flex;
+    color: white;
+}
+
+.segundaFase .design .fi{
+        background-color: blue;
+        padding: 10px;
+        width: 50px;
+        text-shadow: 3px 3px black;
+        height: 50px;
+        font-size: 28px;
+        font-weight: normal;
+        border-radius: 50px;
+        text-align: center;
+        margin: 0 20px;
+        animation: filimua2 2s alternate infinite;
+    
+}
+
+@keyframes filimua2{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.10);
+        background-color:red;
+        color: white;
+    }
+}
+
+/* REGRAS DA FASE 2*/
+
+.regras22{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: red;
+    opacity: 0.9;
+    padding: 100px 0px;
+    display: none;
+}
+
+.regras22.ver{
+    display: block;
+}
+
+.regras22 .regrasBox{
+
+    margin: 0 auto;
+    padding: 30px;
+    height: 70vh;
+    background-color: black;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 3px blue;
+}
+
+.regrasBox ul li{
+    list-style: none;
+    padding: 28px 0px;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}   
+
+.regrasBox h2{
+    color: blue;
+    border-bottom: 2px solid blue;
+    padding: 2px;
+    letter-spacing: 4px;
+    font-family: impact;
+    font-size: 30px;
+}
+
+.regras22 .closeRegras{
+    position: absolute;
+    top: 18%;
+    background-color: transparent;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    left: 70%;
+    color: white;
+}
+
+.regras22 .closeRegras:hover{
+    color: red;
+    background-color: whitesmoke;
+    transition: .4s ease;
+}
+
+
+
+/*ESTATISTICA DO JOGADOR*/
+
+.estatisticaJogador{
+    position: absolute;
+    top: 0;
+    background-color: red; 
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    padding: 100px 0px;
+    display: none;
+}
+.estatisticaJogador.estaOpen{
+    display: block;
+}
+
+.estatisticaJogador .boxEsta{
+    
+    margin: 0 auto;
+    padding: 30px;
+    height: 70vh;
+    background-color: black;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 3px blue;
+}
+.boxEsta h2{
+    color: blue;
+    border-bottom: 2px solid blue;
+    padding: 2px;
+    letter-spacing: 4px;
+    font-family: impact;
+    font-size: 32px;
+}
+
+.boxEsta ul li{
+    list-style: none;
+    padding: 28px 0px;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.boxEsta span{
+    color: blue;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 400;
+    animation: indibilingue 1s alternate infinite;
+}
+
+.estatisticaJogador .sairEsta{
+    position: absolute;
+    top: 18%;
+    background-color: transparent;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    left: 70%;
+    color: white;
+}
+
+.estatisticaJogador .sairEsta:hover{
+    color: red;
+    background-color: whitesmoke;
+    transition: .4s ease; 
+}
+
+/*CONVERSA COM ADMINISTRADOR*/
+
+.adm{
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    height: 100vh;
+    background-image: url(../pictures/filimua\ novas\ 4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0px;
+    display: none;
+}
+.adm.aparecer{
+    display: block;
+}
+
+.adm .boxAdm{
+    width: 900px;
+    height: 550px;
+    background-color: black;
+    opacity: 0.8;
+    margin: 0 auto;
+    padding: 20px 2%;
+}
+
+.adm  .boxAdm h2{
+    text-align: center;
+    color: white;
+    font-size: 38px;
+}
+
+.boxAdm{
+    color: red;
+    text-align: center;
+}
+
+.boxAdm a{
+    color: blue;
+}
+
+.boxAdm p{
+    font-size: 24px;
+    font-weight: normal;
+    text-shadow: 1px 1px white;
+}
+
+.boxAdm button{
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    font-size: 18px;
+    background-color: red;
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    border-radius: 120px;
+    animation: button 2s alternate infinite;
+}
+@keyframes button{
+    from{
+        opacity: 0.5;
+        outline: 0px solid black;
+    }
+    to{
+        opacity: 1;
+        outline: 4px solid red;
+        background-color: blue;
+        color: red;
+    }
+}

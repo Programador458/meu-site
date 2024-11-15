@@ -1,0 +1,251 @@
+
+.sextoProcedimento{
+    position: absolute;
+    top: 19%;
+    left: 28.2%;
+    padding: 10px;
+    background-color: white;
+    width: 600px;
+    border-radius: 100px;
+    height: 10px;
+    text-align: center;
+}
+
+.sextoProcedimento .sextoProgresso6{
+    height: 12px;
+    width: 0px;
+    border-radius: 12px;
+    margin-top: -5px;
+    background-color: green;
+}
+
+
+
+.sexta{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../pictures/IMG_3093.WEBP);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.sexta.questao6{
+    display: block;
+}
+
+.sexta .question6{
+    background-color: red;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 100px;
+    width: 600px;
+    opacity: 0.9;
+}
+
+.sexta .question6 .say{
+    color: black;
+    font-weight: bold;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.sexta .question6 h2{
+    color: blue;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+.sexta .question6 #question{
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.sexta .question6 #question:hover{
+    background-color: darkblue;
+    color: red;
+    transition: .2s ease;
+}
+
+
+    /* SEXTO FUNDO ERRADO*/
+
+    .sextofundo-errado{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9); 
+        width: 100%;
+        height: 100vh;
+        padding: 100px;
+        display: none;
+    }
+
+    .sextofundo-errado.errado{
+        display: block;
+    }
+
+    .sexto_errado{
+        text-align: center;
+        padding: 30px;
+        height: 400px;
+        background-color: red;
+        width: 500px;
+        margin: 0 auto;
+        border-radius: 50px 30px 80px 0px;
+        animation: borda 1.5s alternate infinite;
+    }
+
+
+    @keyframes borda{
+        from{
+            opacity: 0.6;
+            outline: 1px solid white;
+        }
+        to{
+            opacity: 1;
+            outline: 4px solid white;
+        }
+    }
+
+    .sexto_errado p{
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 20px;
+        text-shadow: 2px 2px black;
+    }
+
+    .sexto_errado p span{
+        color: black;
+        animation: borda 1.5s alternate infinite;
+        padding: 4px;
+    }
+
+    .sexto_erradoh2{
+        color: white;
+        font-size: 26px;
+        text-shadow: 2px 2px black;
+        letter-spacing: 2px;
+    }
+
+    .sextoover{
+        color: black;
+        font-size: 30px;
+        padding: 10px;
+        text-shadow: 1px 1px black;
+        letter-spacing: 2px;
+    }
+
+    .sexto_errado button{
+        width: 100%;
+        padding: 8px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 20px;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .sexto_errado button:hover{
+        background-color: white;
+        color: red;
+        transition: .6s;
+    }
+
+    /* SEXTO CERTO*/
+
+    .sexto_certo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100vh;
+        padding: 100px;
+        display: none;
+    }
+
+    .sexto_certo.certo6{
+        display: block;
+    }
+
+    .sextoCerto{
+        text-align: center;
+        background-color: white;
+        padding: 80px;
+        margin: 0 auto;
+        width: 500px;
+        border-radius: 80px 30px 80px 20px;
+    }
+
+    .sexto_certo img{
+        width:150px;
+        height: 150px;
+        border-radius: 150px;
+        animation: ull 1s alternate infinite;
+    }
+
+    @keyframes ull{
+        from{
+            opacity: 0.1; 
+            translate: scale(0);
+        }
+        to{
+            opacity: 1;
+            translate: scale(0.20);
+        }
+    }
+
+    .sexto_certo p{
+        color: red;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .sexto_certo p span{
+        color: green;
+    }
+
+    .sexto_certo h2{
+        font-size: 28px;
+        color: green;
+        text-transform: uppercase;
+    }
+
+    .sexto_certo button{
+        width: 100%;
+        padding: 10px;
+        font-size: 22px;    
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-weight: bold;
+        text-shadow: 1px 1px black;
+    }
+
+    .sexto_certo button:hover{
+        background-color: red;
+        color: black;
+        transition: .6s;
+    }
+

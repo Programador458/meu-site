@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="../pictures/360_F_550958748_OeGcRonEUNoVhd0wjd9zSEMhLFIGO9Bt.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Developer</title>
+    
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/segundaPergunta.css">
+    <link rel="stylesheet" href="../css/terceiraPergunta.css">
+    <link rel="stylesheet" href="../css/quartaPergunta.css">
+    <link rel="stylesheet" href="../css/quintaPergunta.css">
+    <link rel="stylesheet" href="../css/sextaPergunta.css">
+    <link rel="stylesheet" href="../css/segundaFase.css">
+    <link rel="stylesheet" href="../css/regras.css">
+</head>
+<body>
+
+    
+    <!--MUSICA DO JOGO-->
+    
+    <audio id="correct-sound" src="../audios/StockTune-March Of The Champions_1723645257.mp3" loop></audio>
+    <audio id="Secondsound" src="../audios/StockTune-Rise Of The Champions_1723645721.mp3" loop></audio>
+    <audio id="Certo-sound" src="../audios/crowd-cheer-ii-6263.mp3"></audio>
+    <!--FIM-->
+
+
+    <!--Regras-->
+    <!--FIM-->
+
+    <div class="criador">
+        <p>Created By : <span class="fjm">FILIMUA FJM</span></p>
+    </div>
+
+    <div class="filimua">
+
+        <div class="f">F</div>
+        <div class="f">I</div>
+        <div class="f">L</div>
+        <div class="f">I</div>
+        <div class="f">M</div>
+        <div class="f">U</div>
+        <div class="f">A</div>
+    </div>
+
+    <div class="interface">
+
+        <div class="controlo">
+
+            <h1>World Programmator</h1>
+
+            <br>
+            <br>
+
+            <button onclick="inicio()">Entrar</button>
+
+            <br>
+            <br>
+            
+            <button class="regras" onclick="Firstfase()">Regras Do Jogo</button>
+            
+            <br>
+            <br>
+            <button class="comentario" onclick="content()">FeedBack</button>
+            <br>
+            <br>
+            <button class="primeira" onclick="primeiraFase()">Regras - 1 Fase</button>
+
+        </div>
+    
+        
+        <div class="fundo-comenta">
+
+            <p class="only" onclick="closeBox()">X</p>
+            <div class="comenta">
+                <h2>Feedback</h2>
+                <br>
+                <textarea name="" id="comentou" placeholder="Comenta ou Avalia-nos aqui..."></textarea>
+                <br>
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!--R E G R A S  P R I M E I R A  F A S E-->
+
+    <div class="primeiraFaseRegras">
+
+        <button class="closeFase1" onclick="closeFase1()">X</button>
+        <div class="boxRegras">
+
+            <h2>Regras - Fase 1</h2>
+            <br>
+            <ul>
+                <li><strong style="color: blue; font-size: 20px;">1</strong> - A primeira fase é a fase mas acessivel do jogo, pois conta apenas com <span class="number">5</span> perguntas.</li>
+                <li><strong style="color: blue; font-size: 20px;">2</strong> - A primeira fase posui um botão de ajuda, que o jogador pode recorrer quando estiver a precisar de ajuda.</li>
+                <li><strong style="color: blue; font-size: 20px;">3</strong> - Na primeira fase o jogo ajuda o jogador dando lhe <span class="number">2</span> opções de resposta certa e <span class="number">2</span> de resposta errada quando é clicado no botão de ajuda.</li>
+                <li><strong style="color: blue; font-size: 20px;">4</strong> - Na primeira fase o jogador se passar obterá a pontuação de <span class="number">50</span>, pois cada pergunta vale <span class="number">10</span>.</li>
+                <li><strong style="color: blue; font-size: 20px;">5</strong> - O jogador vai ter acesso visual ao seu nome, a fase, bem como o seu desempenho no que diz respeito a pontuação.</li>
+                <li class="fica">Está fase só fica quem não tem esperiençia.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--REGRAS GERAL-->
+    <div class="regrasGeral">
+        <button class="fecharRegra" onclick="fecharRegra()">X</button>
+        <div class="boxGeral">
+
+            <h2>Regras Do Jogo</h2>
+            <br>
+            <h3>Obrigado por estar jogando o nosso jogo, aqui estão as regras divirta-se.</h3>
+            <br>
+            <ul>
+                <li><strong style="color: blue; font-size: 20px;">1</strong>- O jogo inicialmente pede o nome do jogador, esse campo é de caracter obrigatório, pois é atravês dele que nós iremos saber que está jogando, o jogo só inicia se o jogador informar o seu nome, caso contrario não tem como jogar, o campo de entrada do nome irá mudar a cor para vermelho, isso significa que o jogador está tentando entrar no jogo sem preencher o seu nome, e não tem como entrar pois o jogo não permite.</li>
+                <li><strong style="color: blue; font-size: 20px;">2</strong> - O jogo está dividido em <span class="geral">3</span> fases, diferençiando-se no número de perguntas.</li>
+                <li><strong style="color: blue; font-size: 20px;">3</strong> - O jogo conta com <span class="geral">30</span> perguntas.</li>
+                <li><strong style="color: blue; font-size: 20px;">5</strong> - A <span class="geral">1</span> fase, conta com <span class="geral">5</span> perguntas.</li>
+                <li><strong style="color: blue; font-size: 20px;">6</strong> - A <span class="geral">2</span> fase, conta com <span class="geral">15</span> perguntas.</li>
+                <li><strong style="color: blue; font-size: 20px;">7</strong> - A <span class="geral">3</span> fase, conta com <span class="geral">20</span> perguntas.</li>
+                <li><strong style="color: blue; font-size: 20px;">4</strong> - A cada resposta certa o jogador ganha <span class="geral">10</span> pontos.</li>
+                <li><strong style="color: blue; font-size: 20px;">8</strong> - O jogo posui uma barra de progresso que aumenta de cada vez que o jogador acerta uma pergunta.</li>
+                <li><strong style="color: blue; font-size: 20px;">9</strong> - O jogo posui também um botão de ajuda, que irá ajudar o jogador, ilustrando os campos certos e errados, dependendo da fase do jogo.</li>
+                <li><strong style="color: blue; font-size: 20px;">10</strong> - O jogo permite ao jogador visualizar a fase, o seu nome, bem como os pontos que ele irá fazendo a cada resposta certa.</li>
+                
+                <br>
+
+                <h3>Ai estão as regras do World Programmator - entre e mostre que és informático.</h3>
+            </ul>
+        </div>
+    </div>
+    <!--P L A Y E R N A M E-->
+
+    <div class="player">
+
+        <div class="enterName">
+            <div id="form">
+                <input type="text" id="nome" class="nome" placeholder="Nome Jogador" required>
+                <button style="cursor: pointer;" onclick="Bemvindo()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- E N D-->
+
+    
+     <!--W E L C O M E-->
+
+     <div class="welcome">
+
+        <div class="bem">
+
+            <h1 id="jogador"></h1>
+            <br>
+            <h2>Bem-Vindo ao: </h2>
+            
+            <br>
+            <br>
+            <h3>World Programmator</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button onclick="playerStart()">Iniciar</button>
+        </div>
+        
+     </div>
+    <!-- E N D -->
+    
+<!--******************************************** P R I M E I R A * F A S E *************************************************************************************************************-->
+    <!--FIRST QUESTION-->
+    
+    <div class="first">
+        
+                    <div class="fase">Fase :<span>1</span></div>
+        <div class="nomePla">Nome do Jogador : <span id="nomeJogador"></span></div>
+
+        <div class="resultados">
+            <div clss="points">Pontos: <span id="pontosFeitos" class="mesmo">0</span></div>
+        </div>
+
+        <div class="procedimento" style="top: 12%;left: 27.9%; position: absolute;">
+            <div class="progresso"></div>
+        </div>
+  
+    <div class="question1">
+
+        <p class="say">1 - primeira Pergunta</p>
+        <br>
+
+        <p id="fim"></p>
+        <br>
+        <h2 class="firstTexto">Javascript é: </h2>
+        <br>
+        <br>
+        <p id="question" onclick="respect()" class="resposta1">Linguagem De Programação</p>
+        <br>
+        <p id="question" class="resposta2">Linguagem De Desenvolvimento</p>
+        <br>
+        <p id="question" class="resposta3">Aplicação Web</p>
+        <br>
+        <p id="question" class="resposta4">Sistema de Código</p>
+        <br>
+
+        <button onclick="ajuda()" style="width: 500px; background-color: black; color: white; border: none; padding: 10px; font-size: 22px; letter-spacing: 4px; text-transform: uppercase;">Ajuda</button>
+    </div>      
+
+    </div>
+
+    
+    <div class="fundo-certo">
+
+
+        <div class="certo">
+            <p>Pontos: <span id="pontos">10</span></p>
+            <br>
+                <h2 class="certoh2">P A R A B É N S !!</h2>
+                <br>
+                <h2 class="certoh2">Voçê Acertou  !!</h2>
+                <br>
+                <img src="../pictures/IMG_3073.JPG" alt="">
+            <br>
+            <br>
+            <button onclick="question22()">Próximo</button>
+        </div>
+    </div>
+
+    <div class="fundo-errado">
+
+        <div class="errado">
+            <p>Pontos: <span id="pontos">0</span></p>
+            <br>
+            <br>
+            <h2 class="erradoh2">VOÇÊ ERROU !!</h2>
+            <br>
+            <h2 class="over">Fim de Jogo!!</h2>
+            
+            <br>
+            <br>
+            <button onclick="backAgain()">SAIR</button>
+            <br>
+            <br>
+            <button onclick="playAgain()">REINICIAR</button>
+        </div>
+    </div>
+
+    <!--END-->
+
+
+        <!--SECOND QUESTION-->
+    
+        <div class="second">
+            <div class="fase">Fase :<span>1</span></div>
+            <div class="nomePla">Nome do Jogador : <span id="segundoJogador"></span></div>
+
+        <div class="resultados">
+            <div class="points">Pontos: <span id="pontosFeitos" class="mesmo">10</span></div>
+        </div>
+            
+
+            <div class="segundoprocedimento">
+                <div class="segundoProgresso2"></div>
+            </div>
+      
+        <div class="question2">
+    
+            <p class="say">2 - Segunda Pergunta</p>
+            <br>
+    
+            <p id="segundoFim"></p>
+            <br>
+            <h2 class="firstTexto">Quem criou a linguagem C : </h2>
+            <br>
+            <br>
+            <p id="question"  class="segundaPergunta1">Steve Jobbs</p>
+            <br>
+            <p id="question" onclick="segundoRespect()" class="segundaPergunta2">Dennis Ritch</p>
+            <br>
+            <p id="question" class="segundaPergunta3">Ello Max</p>
+            <br>
+            <p id="question" class="segundaPergunta4">Lil Won Ging</p>
+            <br>
+    
+            <button id="segundaAjuda" style="width: 500px;cursor: pointer; background-color: black; color: white; border: none; padding: 10px; font-size: 22px; letter-spacing: 4px; text-transform: uppercase;">Ajuda</button>
+        </div>      
+    
+        </div>
+
+        <div class="segundofundo-errado">
+
+            <div class="segundo_errado">
+                <p>Pontos: <span id="segundoPontos">0</span></p>
+                <br>
+                <br>
+                <h2 class="segundo_erradoh2">VOÇÉ  ERROU  !!</h2>
+                <br>
+                <h2 class="segundoover">Fim de Jogo !!</h2>
+                
+                <br>
+                <br>
+                <button onclick="backAgain()">SAIR</button>
+                <br>
+                <br>
+                <button onclick="playAgain()">REINICIAR</button>
+            </div>
+        </div>
+
+        <div class="segundofundo-certo">
+
+            <div class="segundocerto">
+                <p>Pontos: <span id="segundopontos" style="color: red;">20</span></p>
+                <br>
+                    <h2 class="segundocertoh2">P A R A B É N S !!</h2>
+                    <br>
+                    <h2 class="segundocertoh2">Voçê Acertou !!</h2>
+                    <br>
+                    <img src="../pictures/IMG_3073.JPG" alt="">
+                <br>
+                <br>
+                <button onclick="question33()">Próximo</button>
+            </div>
+        </div>
+
+        <!--FIM-->
+
+
+
+        <!-- TERCEIRA PERGUNTA-->
+
+    
+        <div class="terceira">
+            <div class="fase">Fase :<span>1</span></div>
+            <div class="nomePla">Nome do Jogador : <span id="terceiroJogador"></span></div>
+
+            <div class="resultados">
+                <div class="points">Pontos: <span id="pontosFeitos" class="mesmo">20</span></div>
+            </div>
+
+            <div class="terceiroprocedimento" style="top: 12%;left: 27.9%; position: absolute;">
+                <div class="terceiroProgresso3"></div>
+            </div>
+                
+            <div class="question3">
+    
+            <p class="say">3 - Terceira Pergunta</p>
+            <br>
+    
+            <p id="terceiraFim"></p>
+            <br>
+            <h2 class="firstTexto">Quem criou HTML: </h2>
+            <br>
+            <br>
+            <p id="question" class="terceiraPergunta1">Bill Gate</p>
+            <br>
+            <p id="question" class="terceiraPergunta2">Mark Zuckerberg</p>
+            <br>
+            <p id="question" class="terceiraPergunta3">Steve Jobbs</p>
+            <br>
+            <p id="question" onclick="terceiroRespect()" class="terceiraPergunta4">Tim bernnes Lee</p>
+            <br>
+            
+            <button id="terceiraAjuda" style="width: 500px; background-color: black; cursor: pointer; letter-spacing: 4px; text-transform: uppercase; color: white; border: none; padding: 10px; font-size: 22px;">Ajuda</button>
+        </div>
+    </div>
+       
+    <div class="terceirofundo-errado">
+
+        <div class="terceiro_errado">
+            <p>Pontos: <span id="terceiroPontos">0</span></p>
+            <br>
+            <br>
+            <h2 class="terceiro_erradoh2">VOÇÉ  ERROU !!</h2>
+            <br>
+            <h2 class="terceiroover">Fim de Jogo !!</h2>
+            
+            <br>
+            <br>
+            <button onclick="backAgain()">SAIR</button>
+            <br>
+            <br>
+            <button onclick="playAgain()">REINICIAR</button>
+        </div>
+    </div>
+    
+    <div class="terceirofundo-certo">
+
+        <div class="terceirocerto">
+            <p>Pontos: <span id="terceiropontos" style="color: red;">30</span></p>
+            <br>
+                <h2 class="terceirocertoh2">P A R A B É N S !!</h2>
+                <br>
+                <h2 class="terceirocertoh2">Voçê Acertou !!</h2>
+                <br>
+                <img src="../pictures/IMG_3073.JPG" alt="">
+                <br>
+            <br>
+            <button onclick="question44()">Próximo</button>
+        </div>
+    </div>
+        <!--FIM-->
+
+          <!-- QUARTA PERGUNTA-->
+
+    
+          <div class="quarta">
+
+            <div class="fase">Fase :<span>1</span></div>
+            <div class="nomePla">Nome do Jogador : <span id="quartoJogador"></span></div>
+
+            <div class="resultados">
+                <div class="points">Pontos: <span id="pontosFeitos" class="mesmo">30</span></div>
+            </div>
+
+            <div class="quartoprocedimento" style="top: 12%;left: 27.9%; position: absolute;">
+                <div class="quartoProgresso4"></div>
+            </div>
+                
+            <div class="question4">
+    
+            <p class="say">4 - Quarta Pergunta</p>
+            <br>
+    
+            <p id="quartoFim"></p>
+            <br>
+            <h2 class="firstTexto">Em que ano foi lançado o google chrome: </h2>
+            <br>
+            <br>
+            <p id="question" class="quartaPergunta1">1998</p>
+            <br>
+            <p id="question" class="quartaPergunta2">2014</p>
+            <br>
+            <p id="question" class="quartaPergunta3">1990</p>
+            <br>
+            <p id="question" onclick="quartoRespect()" class="quartaPergunta4">2008</p>
+            <br>
+            
+            <button onclick="quartaAjuda4()" style="width: 500px; background-color: black; cursor: pointer; letter-spacing: 4px; text-transform: uppercase; color: white; border: none; padding: 10px; font-size: 22px;">Ajuda</button>
+        </div>
+    </div>
+       
+    <div class="quartofundo-errado">
+
+        <div class="quarto_errado">
+            <p>Pontos: <span id="quartoPontos">30</span></p>
+            <br>
+            <br>
+            <h2 class="quarto_erradoh2">VOÇÉ  ERROU !!</h2>
+            <br>
+            <h2 class="quartoover">Fim de Jogo !!</h2>
+            
+            <br>
+            <br>
+            <button onclick="backAgain()">SAIR</button>
+            <br>
+            <br>
+            <button onclick="playAgain()">REINICIAR</button>
+        </div>
+    </div>
+    
+    <div class="quartofundo-certo">
+
+        <div class="quartocerto">
+            <p>Pontos: <span class="quartoPontos" style="color: red">40</span></p>
+            <br>
+                <h2 class="quartocertoh2">P A R A B É N S !!</h2>
+                <br>
+                <h2 class="quartocertoh2">Voçê Acertou !!</h2>
+                <br>
+                <img src="../pictures/IMG_3073.JPG" alt="">
+                <br>
+            <br>
+            <button onclick="question55()">Próximo</button>
+        </div>
+    </div>
+        <!--FIM-->
+
+
+           <!-- QUINTA PERGUNTA-->
+
+    
+           <div class="quinto">
+
+            <div class="fase">Fase :<span>1</span></div>
+            <div class="nomePla">Nome do Jogador : <span id="quintoJogador"></span></div>
+
+            <div class="resultados">
+                <div class="points">Pontos: <span id="pontosFeitos" class="mesmo">40</span></div>
+            </div>
+
+            <div class="quintoprocedimento" style="top: 12%;left: 27.9%; position: absolute;">
+                <div class="quintoProgresso5"></div>
+            </div>
+                
+            <div class="question5">
+    
+            <p class="say">5 - Quinta Pergunta</p>
+            <br>
+    
+            <p id="quintoFim"></p>
+            <br>
+            <h2 class="firstTexto">Qual das seguintes apps abaixo não é um IDEs: </h2>
+            <br>
+            <br>
+            <p id="question" class="quintaPergunta1">Visual Studio Code</p>
+            <br>
+            <p id="question" class="quintaPergunta2">Note Pad++</p>
+            <br>
+            <p id="question" onclick="quintoRespect()" class="quintaPergunta3">Apple Store</p>
+            <br>
+            <p id="question" class="quintaPergunta4">Sublime Text</p>
+            <br>
+            
+            <button onclick="quintaAjuda()" style="width: 500px; background-color: black; cursor: pointer; letter-spacing: 4px; text-transform: uppercase; color: white; border: none; padding: 10px; font-size: 22px;">Ajuda</button>
+        </div>
+    </div>
+       
+    <div class="quintofundo-errado">
+
+        <div class="quinto_errado">
+            <p>Pontos: <span id="quintoPontos">40</span></p>
+            <br>
+            <br>
+            <h2 class="quinto_erradoh2">VOÇÉ  ERROU !!</h2>
+            <br>
+            <h2 class="quintoover">Fim de Jogo !!</h2>
+            
+            <br>
+            <br>
+            <button onclick="backAgain()">SAIR</button>
+            <br>
+            <br>
+            <button onclick="playAgain()">REINICIAR</button>
+        </div>
+    </div>
+    
+    <div class="quintofundo-certo">
+        
+        <div class="quintocerto">
+            <p>Pontos: <span iquartoopontos" style="color: red;">50</span></p>
+            <br>
+                <h2 class="quintocertoh2">P A R A B É N S !!</h2>
+                <br>
+                <h2 class="quintocertoh2">Voçê Acertou !!</h2>
+                <br>
+                <img src="../pictures/IMG_3073.JPG" alt="">
+                <br>
+            <br>
+            <button onclick="fase2()" class="fase2" style="background-color: red;">Próxima Fase</button>
+        </div>
+    </div>
+    <!--*****************************************************************FIM PRIMEIRA FASE*********************************************************************************************-->
+
+    <section class="segundaFase">
+
+        <div class="design">
+
+            <div class="fi">F</div>
+            <div class="fi">I</div>
+            <div class="fi">L</div>
+            <div class="fi">I</div>
+            <div class="fi">M</div>
+            <div class="fi">U</div>
+            <div class="fi">A</div>
+        </div>
+
+            <div class="created">
+                <p class="dono">Created By: <span class="indi">FILIMUA FJM</span></p>
+            </div>
+
+            <div class="boxFase">
+
+            <div class="h1"><h1>Segunda  Fase</h1></div>
+
+            <div class="botoes">
+                <button class="comecarSegunda" onclick="comecarSegunda()">Entrar</button>
+                <br>
+                <br>
+                <button class="regras2" onclick="regras2()">Regras 2ª Fase</button>
+                <br>
+                <br>
+                <button class="estatistica" onclick="estatistica1()">Estatistica Do Jogador</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--REGRAS DA FASE 2-->
+
+    <div class="regras22">
+
+        <div class="closeRegras" onclick="fecharRegras()">X</div>
+        <div class="regrasBox">
+
+            <h2>Regras - Fase 2</h2>
+
+            <br>
+
+            <ul>
+                <li><strong style="color: blue; font-weight: bold; font-size: 24px;">1</strong>- Nesta fase o nivel de dificuldade aumenta, pois diferente da <span style="color: red;">1</span> fase, a <span style="color: red;">2</span> fase conta com <span style="color: red;">10</span> perguntas.</li>
+                <li><strong style="color: blue; font-weight: bold; font-size: 24px;">2</strong> - Nesta fase, quando o jogador recorrer a ajuda irá ser lhe mostrado <span style="color: red;">3</span> campos com cor verdade, a cor verde simboliza que a resposta está entre uma das perguntas com essa cor.</li>
+                <li><strong style="color: blue; font-weight: bold; font-size: 24px;">3</strong> - Nesta fase, o jogador também pode ver a estatistica ou sejá pode ter acesso visual do seu desempenho durante a <span style="color: red;">1</span> fase.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="estatisticaJogador">
+
+        <div class="sairEsta" onclick="sairEsta()">X</div>
+        <div class="boxEsta">
+
+            <h2>Estatistica do Jogador - 1ª Fase</h2>
+            <br>
+
+            <ul>
+                <li>Nome Do Jogador: <span id="jogadorEsta"></span></li>
+                <li>Pontuação: <span>50</span></li>
+                <li>Borda De Progresso : <span>45%</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="adm">
+
+        <div class="boxAdm">
+            <h2>Olá, <span id="jogadorAdm"></span></h2>
+
+            <br>
+            <br>
+
+            <p>Eu sou o <a target="_blank" href="../pictures/filimua novas 4.jpg">Filimua Fjm</a>, Sou o criador do jogo.</p>
+            <br>
+            <p>Posso dizer que até agora voçê está me surpreendendo, o teu esforço e conhecimento te levou até a segunda fase.</p>
+            <br>
+            <p>Desejo-te uma boa sorte pois irás precisar mesmo, porque a segunda fase é muito competitiva, mas se voçê chegou até aqui é porque tens conhecimento acima da media.</p>
+            <br>
+            <p>Acho que já falei demais portanto <span style="color: white; font-size: 24px;" id="jogadorAdm2"></span>, clica começar para iniciar a segunda fase.</p>
+            
+            <br>
+            <br>
+            <button onclick="inicioSegunda()">Começar</button>
+        </div>
+    </div>
+
+
+    <!--SEXTA PERGUNTA-->
+
+
+    <div class="sexta">
+
+        <div class="fase" style="color: white; font-size: 22px; position: absolute; top: 1%;">Fase :<span style="color: red; font-size: 22px;">2</span></div>
+        <div class="nomePla" style="color: white; font-size: 22px; position: absolute; top: 6%;">Nome do Jogador : <span id="sextoJogador"></span></div>
+
+        <div class="resultados">
+            <div class="points" style="color: white; font-size: 22px;">Pontos: <span style="color: red; font-size: 22px;" id="pontosFeitos" class="mesmo">50</span></div>
+        </div>
+
+        <div class="sextoProcedimento" style="top: 12%;left: 27.9%; position: absolute;">
+            <div class="sextoProgresso6"></div>
+        </div>
+            
+        <div class="question6">
+
+        <p class="say">6 - Sexta Pergunta</p>
+        <br>
+
+        <p id="sextoFim" style="color: white;"></p>
+        <br>
+        <h2 class="firstTexto">O que é o mysql workbench: </h2>
+        <br>
+        <br>
+        <p id="question" class="sextaPergunta1">Ambiente de Desenvolvimento Integrado</p>
+        <br>
+        <p id="question" class="sextaPergunta2">Sistema De Interligação Estruturada</p>
+        <br>
+        <p id="question" onclick="sextoRespect()" class="sextaPergunta3">Sistema De Gerenciamento de Base De Dados</p>
+        <br>
+        <p id="question" class="sextaPergunta4">Aplicativo Movél</p>
+        <br>
+        
+        <button onclick="sextaAjuda()" style="width: 500px; background-color: blue; cursor: pointer; letter-spacing: 4px; text-transform: uppercase; color: red; border: none; padding: 10px; font-size: 22px;">Ajuda</button>
+    </div>
+</div>
+   
+<div class="sextofundo-errado">
+
+    <div class="sexto_errado">
+        <p>Pontos: <span id="sextoPontos">50</span></p>
+        <br>
+        <br>
+        <h2 class="sexto_erradoh2">VOÇÉ  ERROU !!</h2>
+      
+        <h2 class="sextoover">Fim de Jogo !!</h2>
+        
+        <br>
+        <br>
+        <a href="game.html"><button>SAIR</button></a>
+        <br>
+        <br>
+        <a href="game.html"><button>REINICIAR</button></a>
+    </div>
+</div>
+
+
+    <div class="sexto_certo">
+
+    <div class="sextoCerto">
+
+        <p class="pontosSexto">Pontos : <span>60</span></p>
+        <br>
+        <h2>Voçê Acertou !!</h2>    
+        <br>
+        <img src="../pictures/IMG_3073.JPG" alt="">
+        <br>
+        <br>
+        <button>Próxima</button>
+    </div>
+    </div>
+  
+
+
+
+           <!--ARQUIVOS EXTERNOS JAVASCRIPT-->
+
+        <script src="../js/globalGame.js"></script>
+        <script src="../js/Primeira.js"></script>
+        <script src="../js/Segunda.js"></script>
+        <script src="../js/terceira.js"></script>
+        <script src="../js/quarta.js"></script>
+        <script src="../js/quinta.js"></script>
+        <script src="../js/sexta.js"></script>
+        
+</body>
+</html>

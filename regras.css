@@ -1,0 +1,151 @@
+
+
+.regrasGeral{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: blue;
+    opacity: 0.9;
+    height: 100vh;
+    padding: 1rem;
+    display: none;
+}
+
+.regrasGeral.openRegra{
+    display: block;
+}
+
+.regrasGeral .boxGeral{
+    border-radius: 20px;
+    background-color: white;
+    width: 900px;
+    padding: 20px;
+    height: 630px;
+    margin: 0 auto;
+}
+
+.regrasGeral h2{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+    font-size: 32px;
+    text-shadow: 2px 2px black;
+}
+
+.regrasGeral .geral{
+    color: red;
+    text-shadow: 1px 1px black;
+}
+
+.regrasGeral h3{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+}
+
+.regrasGeral ul li{
+    list-style: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+.regrasGeral .fecharRegra{
+    position:absolute;
+    top: 4%;
+    left: 76%;
+    font-size: 40px;
+    width: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.regrasGeral .fecharRegra:hover{
+    background: whitesmoke;
+    color: red;
+    transition: .5s ease;
+}
+
+
+/* REGRAS DA 1 FASE*/
+
+.primeiraFaseRegras{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: blue;
+    opacity: 0.9;
+    height: 100vh;
+    padding: 8rem;  
+    display: none;
+}
+
+.primeiraFaseRegras.openRegra2{
+    display: block;
+}
+
+.primeiraFaseRegras .boxRegras{
+    border-radius: 20px;
+    background-color: white;
+    width: 800px;
+    padding: 20px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.primeiraFaseRegras h2{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+    font-size: 32px;
+    text-shadow: 2px 2px black; 
+}
+
+.primeiraFaseRegras ul li{
+    list-style: none;
+    color: black;
+    font-weight: bold;
+    padding: 13px 0px;
+    font-size: 19px;
+}
+
+.primeiraFaseRegras .fica{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+}
+
+.primeiraFaseRegras .number{
+    font-size: 19px;
+    color: red;
+    text-shadow: 1px 1px black;
+}
+
+.primeiraFaseRegras .closeFase1{
+    position:absolute;
+    top: 20%;
+    left: 74%;
+    font-size: 40px;
+    width: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.primeiraFaseRegras .closeFase1:hover{
+    background: whitesmoke;
+    color: red;
+    transition: .5s ease;
+}

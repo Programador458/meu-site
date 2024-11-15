@@ -1,0 +1,639 @@
+/* REGRAS DO JOGO*/
+
+
+
+/*FIM*/
+
+.fase{
+    position: absolute;
+    top: 0;
+    left: 2%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+    font-size: 16px;
+}
+
+.fase span{
+    color: white;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.criador{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+
+.criador p{
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.criador .fjm{
+    color: red;
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 2px;
+    animation: indibilingue 2s alternate infinite;
+}
+
+@keyframes indibilingue{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.10);
+    }
+}
+
+.filimua{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    padding: 20px 2px;
+    display: flex;
+    color: white;
+}
+
+.filimua .f{
+    background-color: blue;
+    padding: 10px;
+    width: 50px;
+    text-shadow: 3px 3px black;
+    height: 50px;
+    font-size: 28px;
+    font-weight: normal;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0 20px;
+    animation: filimua 2s alternate infinite;
+}
+@keyframes filimua{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.10);
+        background-color: white;
+        color: blue;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+.interface{
+    background-image: url(../pictures/360_F_550958748_OeGcRonEUNoVhd0wjd9zSEMhLFIGO9Bt.jpg);
+    height: 100vh;
+    background-position-y: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.interface .controlo{
+    padding: 15%;
+}
+
+.interface .controlo h1{
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px black;
+    animation: letras 2s alternate infinite;
+}
+
+@keyframes letras{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+.interface .controlo button{
+    width: 400px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.interface .controlo button:hover{
+    transition: .5s ease;
+    background-color: white;
+    color: blue;
+}
+
+/* WELCOME PLAYER*/
+
+.welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../pictures/IMG_3170.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.welcome.vindo{
+    display: block;
+}
+
+.bem{
+    width: 700px;
+    margin: 10rem auto;
+    padding: 40px;
+    background-color: blue;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.bem h1{
+    font-weight: bold;
+    color: red;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.bem h2{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px black;
+}
+
+.bem h3{
+    font-size: 35px;
+    color: red;
+    text-transform: uppercase;
+    text-shadow: 3px 3px black;
+    font-weight: bold;
+    animation: letras 2s alternate infinite;
+}
+
+.bem button{
+    padding: 20px;
+    text-transform: uppercase; 
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    transition: 1s all;
+    text-align: center;
+    animation: inicio 1s alternate-reverse infinite;
+}
+
+@keyframes inicio{
+    from{
+        outline: 0px solid black;
+    }
+    to{
+        outline: 8px solid red;
+
+    }
+}
+/* P L A Y E R <-> N A M E*/
+
+
+
+    .player{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: none;
+    }
+    .player.playerName{
+        display: block;
+    }
+    
+    .mesmo{
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .helpPlayer{
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .nomePla{
+        position: absolute;
+        color: red;
+        left: 2%;
+        top: 4%;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+    .resultados{
+        display: flex;
+        gap: 60px;
+        position: absolute;
+        left: 78%;
+        top: 4%;
+        
+        text-transform: uppercase;
+        font-weight: bold;
+        color: red;
+    }
+
+    .player .enterName{
+        padding: 20%;
+        text-align: center;
+    }
+
+    .player .enterName #form{
+        padding: 40px;
+        gap: 20px;
+        background-color: blue;
+        display: flex;
+        margin-left: 150px;
+        width: 500px;
+        flex-direction: column;
+    }
+
+    .player #form input{
+        padding: 2px;
+        border: none;
+        background: none;
+        border-bottom: 2px solid white;
+        outline: none;
+        font-size: 18px;
+        color: red;
+        text-transform: capitalize;
+    }
+
+    .player button{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+/* E N D*/
+
+
+
+
+
+/* C O M E N T A - P A I N E L*/
+
+.fundo-comenta{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: blue;
+    opacity: 0.9;
+    height: 100vh;
+    padding: 8rem;
+    display: none;
+}
+
+.fundo-comenta .only{
+    position:absolute;
+    top: 20%;
+    left: 74%;
+    font-size: 40px;
+    width: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.fundo-comenta .only:hover{
+    background: whitesmoke;
+    color: red;
+    transition: .5s ease;
+}
+.fundo-comenta.open{
+    display: block;
+    transition: 1s ease;
+}
+
+.comenta{
+    border-radius: 20px;
+    background-color: white;
+    width: 800px;
+    padding: 20px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.comenta textarea{
+    width: 700px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 10px;
+    height: 350px;
+    outline: none;
+}
+
+.comenta button{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 700px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color:black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.comenta button:hover{
+    color: black;
+    background-color: blue;
+}
+
+.comenta h2{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+    font-size: 32px;
+    text-shadow: 2px 2px black;
+}
+
+
+/* F I R S T - QUESTION 1*/
+
+.procedimento{
+    position: absolute;
+    top: 0%;
+    left: 28%;
+    padding: 10px;
+    background-color: white;
+    width: 600px;
+    border-radius: 100px;
+    height: 10px;
+    text-align: center;
+}
+
+.procedimento .progresso{
+    height: 12px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: -5px;
+    background-color: green;
+}
+
+.first{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../pictures/IMG_3092.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.first.questao1{
+    display: block;
+}
+
+.first .question1{
+    background-color: blue;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 100px;
+    opacity: 0.9;
+    width: 600px;
+}
+
+.first .question1 .say{
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.first .question1 h2{
+    color: orange;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px black;
+}
+
+
+.first .question1 #question{
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.first .question1 #question:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: .2s ease;
+}
+
+/* C E R T A - 1 */
+
+.fundo-certo{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    padding: 8%;
+    display: none;
+}
+
+.fundo-certo .only-certo{
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 80%;
+    top: 15%;
+    font-size: 50px;
+}
+
+.fundo-certo .only:hover{
+    color: red;
+}
+.fundo-certo.abrir{
+    display: block;
+    transition: 1s ease;
+}
+
+.certo{
+    background-color: blue;
+    padding: 60px;
+    margin: 0 auto;
+    width: 500px;
+    box-shadow: 2px 2px 4px 4px white;
+    border-radius: 20px 90px 20px 90px;
+}
+
+.certo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    animation: imagem 1.5s alternate infinite;
+}
+
+@keyframes imagem{
+    from{
+        opacity: 0.2;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+
+.certo button{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.certo button:hover{
+    background-color: white;
+    color: black;
+}
+
+.certo p{
+    color: white;
+    font-size: 24px;
+}
+
+.certo p span{
+    color: red;
+}
+
+.certo .certoh2{
+    color: green;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* E R R A D O - 1 */
+
+.fundo-errado{
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    padding: 10%;
+    display: none;
+}
+
+.fundo-errado.erro1{
+    display: block;
+    transition: 1s ease;
+}
+
+.errado{
+    background-color: blue;
+    padding: 60px;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.errado button{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+}
+
+.errado button:hover{
+    background-color: white;
+    color: black;
+}
+
+.errado p{
+    color: white;
+    font-size: 24px;
+}
+
+.errado p span{
+    color: red;
+}
+
+.errado .erradoh2{
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.errado .over{
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
+

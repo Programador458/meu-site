@@ -1,0 +1,244 @@
+
+
+/* ESTILIZAÇÃO DA SEGUNDA PERGUNTA*/
+
+/* S E C O N D - QUESTION 2*/
+
+.procedimento{
+    position: absolute;
+    top: 19%;
+    left: 28.2%;
+    padding: 10px;
+    background-color: white;
+    width: 600px;
+    border-radius: 100px;
+    height: 10px;
+    text-align: center;
+}
+
+.procedimento .progresso{
+    height: 12px;
+    width: 0px;
+    border-radius: 12px;
+    margin-top: -5px;
+    background-color: green;
+}
+.second{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../pictures/IMG_3093.WEBP);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.second.questao2{
+    display: block;
+}
+
+.second .question2{
+    background-color: blue;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 100px;
+    width: 600px;
+    opacity: 0.9;
+}
+
+.second .question2 .say{
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.second .question2 h2{
+    color: orange;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px black;
+}
+
+
+.second .question2 #question{
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.second .question2 #question:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: .2s ease;
+}
+
+
+/* C E R T A - 2 */
+
+.segundoprocedimento{
+    position: absolute;
+    top: 12%;
+    left: 27.9%;
+    padding: 10px;
+    background-color: white;
+    width: 600px;
+    border-radius: 100px;
+    height: 10px;
+    text-align: center;
+}
+
+.segundoprocedimento .segundoProgresso2{
+    height: 12px;
+    width: 0px;
+    border-radius: 12px;
+    margin-top: -5px;
+    background-color: green;
+}
+
+.segundofundo-certo{
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    padding: 8%;
+    display: none;
+}
+
+.segundofundo-certo.abrir2{
+    display: block;
+    transition: 1s ease;
+}
+
+.segundocerto{
+    background-color: blue;
+    padding: 60px;
+    margin: 0 auto;
+    width: 500px;
+    box-shadow: 2px 2px 4px 4px white;
+    border-radius: 20px 90px 20px 90px;
+}
+
+.segundocerto img{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    animation: imagem 1.5s alternate infinite;
+}
+
+@keyframes imagem{
+    from{
+        opacity: 0.2;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+
+.segundocerto button{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.segundocerto button:hover{
+    background-color: white;
+    color: black;
+}
+
+.segundocerto p{
+    color: white;
+    font-size: 24px;
+}
+
+.segundocerto p span{
+    color: green;
+}
+
+.segundocerto .segundocertoh2{
+    color: green;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* E R R A D O - 2 */
+
+.segundofundo-errado{
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    padding: 10%;
+    display: none;
+}
+
+.segundofundo-errado.erro2{
+    display: block;
+    transition: 1s ease;
+}
+
+.segundo_errado{
+    background-color: blue;
+    padding: 60px;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.segundo_errado button{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+}
+
+.segundo_errado button:hover{
+    background-color: white;
+    color: black;
+}
+
+.segundo_errado p{
+    color: white;
+    font-size: 24px;
+}
+
+.segundo_errado p span{
+    color: red;
+}
+
+.segundo_errado .segundo_erradoh2{
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.segundo_errado .segundoover{
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
+
